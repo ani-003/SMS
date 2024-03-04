@@ -1,0 +1,238 @@
+body {
+    background-color: #333;
+    /* Dark background */
+    font-family: 'Ubuntu Mono', monospace;
+    color: #FFF;
+    /* White text color */
+    overflow: auto;
+}
+p{
+    display: inline;
+}
+
+.container {
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    transform: translate(0%, -50%);
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: space-evenly;
+    /* Evenly distribute elements vertically */
+    align-items: center;
+    width: 20%;
+    /* Adjust the width as needed */
+    max-width: 700px;
+    /* Set a maximum width for responsiveness */
+    border: 2px solid #FFF;
+    /* White border */
+    background-color: #444;
+    /* Dark background color */
+    padding: 20px;
+    height: 50%;
+
+    transition: transform 0.5s, opacity 0.5s;
+
+    transform: translate(0%);
+    opacity: 1;
+}
+
+
+.personal-det {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Create 3 equal columns */
+    grid-gap: 20px;
+    align-items: center;
+    /* Center items vertically */
+}
+
+.personal-det1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Create 3 equal columns */
+    grid-gap: 20px;
+    align-items: center;
+    /* Center items vertically */
+}
+
+.username input {
+    margin-right: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.contact,
+.academics,
+.passcont {
+    display: flex;
+
+    align-items: center;
+    /* Center items vertically */
+}
+
+.container1 {
+
+    height: auto;
+    width: 50%;
+
+
+}
+
+.uname,
+.password {
+    padding: 10px;
+}
+
+.uname input,
+.password input {
+    width: 90%;
+    /* Make the input fields full-width within their containers */
+    padding: 8px;
+    /* Adjust padding for input fields */
+    border: none;
+    /* Remove input borders if desired */
+    background-color: #555;
+    /* Dark input background */
+    color: #FFF;
+    /* White text color */
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center buttons horizontally */
+    margin-top: 20px;
+    /* Increase margin for better spacing */
+}
+
+
+
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 60px;
+    height: 25px;
+    background-image: url('./bliss.png');
+    background-size: cover;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+
+.form {
+
+    background-color: #181717;
+    /* Dark background color */
+    margin: 15px;
+    align-items: center;
+
+}
+
+.form-cont {
+    margin: 15px;
+    border: 1px;
+    border-color: #FFF;
+    top: 50%;
+    left: 10%;
+    align-items: center;
+
+}
+
+.options input:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    /* Stack buttons vertically */
+    align-items: center;
+    /* Center buttons horizontally */
+    margin-top: 15px;
+}
+
+
+
+
+.button input:hover {
+    background-color: #2980B9;
+    /* Change the background color on hover */
+
+}
+
+#back-to-login-btn button {
+
+
+    color: #FFF;
+    /* White button text */
+    width: 40%;
+    padding: 5px 10px;
+    /* Increase padding for better button size */
+    border: none;
+    /* Remove button borders if desired */
+    cursor: pointer;
+    /* Change cursor on hover */
+    transition: transform 0.3s;
+    margin-top: 10px;
+
+}
+
+#registration-container.slide-in {
+    transform: translate(0%);
+    display: block;
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#login-container.slide-out {
+    transform: translate(100%);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#sign-in-btn {
+    width: 90%;
+    background-color: steelblue;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 10px;
+}
+
+#register-btn-login {
+    width: 90%;
+    background-color: rgb(245, 125, 13);
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 10px;
+}
+
+#register-btn-login a {
+    text-decoration: none;
+    color: white;
+}
+
+#register-btn-registration {
+    background-color: rgb(169, 46, 252);
+    color: white;
+    width: 95%;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    margin-left: 13px;
+
+    transition: background-color 0.3s, transform 0.3s;
+}

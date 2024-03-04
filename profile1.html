@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(247, 239, 223);
+        }
+        .container{
+            width: 700px;
+            height:100%;
+            border: 2px solid black;
+            margin-left: 25%;
+            margin-top: 70px;
+          
+           
+        }
+        .img img{
+            width: 10%;
+            height: 7S0px;
+            position: absolute;
+            border-radius: 90%;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .img h3{
+            margin-left: 0%;
+            /* margin-top: 100px; */
+            /* margin-top: 100px; */
+        }
+        .heading h1{
+            text-align: center;
+            padding: 10px;
+            background-color: aqua;
+        }
+        .personal-details{
+            width: 800px;
+            height: 320px;
+            /* border: 2px solid black; */
+            /* position: absolute; */
+            margin-left: 20PX;
+            margin-top: 10PX;
+            padding-left: 10PX;
+            /* overflow: auto; */
+
+        }
+        .details-container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .personal-details p{
+            margin-left: 5px;
+            /* text-transform: lowercase; */
+            margin-bottom: 10PX;
+        }
+        .class-details p{
+            margin-left: 5px;
+            text-transform: uppercase;
+
+        }
+        .button button{
+            padding: 10px;
+            background-color: rgb(58, 58, 247);
+            /* text-align: center; */
+            float: right;
+            color: white;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-right:10px ;
+
+        }
+        .container a{
+            text-decoration: none;
+        }
+        .button button{
+            transition: 0.3s;
+            /* margin-bottom: 10px; */
+        }
+        .button button:hover{
+            transform: scale(1.1);
+        }
+        .img p{
+            margin-left: 50%;
+        }
+        .number{
+            margin-right: 20%;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container"><a href="./register.html"></a>
+    <div class="heading">
+        <h1>
+            STUDENT PROFILE
+        </h1>
+    </div>
+    <div class="img">
+        <img id="std_image" src="" alt="">
+        <br>
+        <h3> <p id="fname"> _ </p><p id="lname">_</p></h3>
+        <P id="course"><b> _</b></P>
+        <p id="yos"><b> _ </b></p>
+
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="details-container">
+
+   
+    <div class="personal-details">
+       <!-- <P> PERSONAL DETAILS:</P> -->
+       <h3><b> GENDER:</b></h3>
+       <P id="gender"> _</P>
+       <h3><b> BIRTH DATE:</b></h3>
+       <P id="dob"> _</P>
+       <h3><b> ADDRESS:</b></h3>
+      
+      <label for="" id="address"> _</label>
+       </div>
+       <div class="number">
+        <h3><b> PHONE:</b></h3>
+       <P id="phone">_</P>
+       <h3><b> EMAIL:</b></h3>
+       <P id="email"> _</P>
+       </div>
+       </div>
+
+       
+        
+
+    
+
+    
+</div>
+
+
+<script>
+    // Retrieve the PHP variable and assign it to a JavaScript variable
+    var fname = "<?php echo $fname; ?>";
+    var lname = "<?php echo $lname; ?>";
+    var std_image = "<?php echo $lname; ?>";
+
+    var course = "<?php echo $course; ?>";
+    var yos = "<?php echo $yos; ?>";
+    var gender = "<?php echo $gender; ?>";
+    var dob = "<?php echo $dob; ?>";
+    var adrs = "<?php echo $adrs; ?>";
+    var phone = "<?php echo $phone; ?>";
+    var email = "<?php echo $email; ?>";
+    
+
+    // Update the content of the label using JavaScript
+    var labelfname = document.getElementById("fname");
+    var labellname = document.getElementById("lname");
+    var image = document.getElementById("std_image");
+    var labelcourse = document.getElementById("course");
+    var labelyos = document.getElementById("yos");
+    var labelgender = document.getElementById("gender");
+    var labeldob = document.getElementById("dob");
+    var labeladrs = document.getElementById("adress");
+    var labelphone = document.getElementById("phone");
+    var labelemail = document.getElementById("email");
+
+
+    labelfname.textContent =  fname;
+    labellname.textContent =  lname;
+    image.src =  std_image;
+    labelcourse.textContent =  course;
+    labelyos.textContent =  yos;
+    labelgender.textContent =  gender;
+    labeldob.textContent =  dob;
+    labeladrs.textContent =  adrs;
+    labelphone.textContent =  phone;
+    labelemail.textContent =  email;
+
+</script>
+
+    
+</body>
+</html>
